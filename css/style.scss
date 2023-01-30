@@ -1,0 +1,246 @@
+@import 'var';
+@import 'mixin';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    background-color: $color-main;
+    display: flex;
+    justify-content: center;
+   
+}
+.dashboard {
+    width: 725px;
+    height: 575px;
+    background-color: $color-second;
+    margin: 50px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header {
+    height: 25px;
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+        color: $color-font;
+        font-weight: 300;
+        letter-spacing: 4px;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        input {
+            border: none;
+            border-radius: 15px;
+            padding: 5px 10px;
+            margin-left: 10px;
+        }
+        img {
+            height: 25px;
+            border-radius: 15px;
+            margin-left: 10px;
+        }
+    }
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 500px;
+    padding: 50px;
+}
+.large {
+    @include large;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    .listen-list {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img {
+            height: .9em;
+        }
+    }
+    .artists {
+        font-size: .7em;
+        margin-bottom: 10px;
+        color: $color-font-dark;
+    }
+    .albums {
+        display: flex;
+        flex-direction: column;
+    }
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    .cover {
+        img {
+            height: 35px;
+            width: 35px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        
+    }
+}
+.names {
+    display: flex;
+    flex-direction: column;
+    .album-name {
+        font-size: .8em;
+    }
+    .artist-name {
+        font-size: .7em;
+        color: $color-font-dark;
+    }
+}
+.small-widget-group{
+    @include small-widget-group;
+}
+.small {
+    @include small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        height: 30px;
+        margin: 5px;
+    }
+    p {
+        color: $color-font;
+        font-size: .7em;
+    }
+}
+.selected {
+    background-color: $color-select;
+    p {
+        color: black
+    }
+}
+.medium {
+    @include medium;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+}
+.num {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+.views {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: .7em;
+    margin-bottom: 20px;
+    div {
+        color: $color-font-dark
+    }
+    .percent {
+        color: $color-select
+    }
+}
+.chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    .mon {
+        background-color: $color-select;
+        border-radius: 2px;
+        height: 30px;
+        width: .5em;
+    }
+    .tue {
+        background-color: $color-select;
+        border-radius: 2px;
+        height: 50px;
+        width: .5em;
+    }
+    .wed {
+        background-color: $color-select;
+        border-radius: 2px;
+        height: 40px;
+        width: .5em;
+    }
+    .thu {
+        background-color: $color-select;
+        border-radius: 2px;
+        height: 30px;
+        width: .5em;
+    }
+    .fri {
+        background-color: $color-select;
+        border-radius: 2px;
+        height: 20px;
+        width: .5em;
+    }
+    .sat {
+        background-color: $color-select;
+        border-radius: 2px;
+        height: 40px;
+        width: .5em;
+    }
+    .sun {
+        background-color: $color-select-dark;
+        border-radius: 2px;
+        height: 56px;
+        width: .5em;
+    }
+}
+.day {
+    font-size: .7em;
+    margin-top: 5px;
+}
+.long-group {
+    @include long-group;
+}
+.long {
+    @include long;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    img {
+        object-fit: cover;
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        margin-right: 10px;
+    }
+    .text {
+        display: flex;
+        flex-direction: column;
+        .name {
+            font-size: .8em;
+            margin-bottom: 5px;
+        }
+        .message {
+
+        }
+    }
+}
+
+

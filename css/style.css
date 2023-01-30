@@ -1,0 +1,275 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background-color: #2b2b2b;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard {
+  width: 725px;
+  height: 575px;
+  background-color: #111111;
+  margin: 50px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  height: 25px;
+  margin: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header h1 {
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+.header div {
+  display: flex;
+  align-items: center;
+}
+.header div input {
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+.header div img {
+  height: 25px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 500px;
+  padding: 50px;
+}
+
+.large {
+  width: 400px;
+  height: 175px;
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+}
+.large .listen-list {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.large .listen-list img {
+  height: 0.9em;
+}
+.large .artists {
+  font-size: 0.7em;
+  margin-bottom: 10px;
+  color: #c4c4c4;
+}
+.large .albums {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row .cover img {
+  height: 35px;
+  width: 35px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+}
+.names .album-name {
+  font-size: 0.8em;
+}
+.names .artist-name {
+  font-size: 0.7em;
+  color: #c4c4c4;
+}
+
+.small-widget-group {
+  width: 175px;
+  height: 175px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.small {
+  width: 75px;
+  height: 75px;
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.small img {
+  height: 30px;
+  margin: 5px;
+}
+.small p {
+  color: #ffffff;
+  font-size: 0.7em;
+}
+
+.selected {
+  background-color: #BBD8EC;
+}
+.selected p {
+  color: black;
+}
+
+.medium {
+  width: 175px;
+  height: 175px;
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  color: white;
+}
+
+.num {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.views {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 0.7em;
+  margin-bottom: 20px;
+}
+.views div {
+  color: #c4c4c4;
+}
+.views .percent {
+  color: #BBD8EC;
+}
+
+.chart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.chart .mon {
+  background-color: #BBD8EC;
+  border-radius: 2px;
+  height: 30px;
+  width: 0.5em;
+}
+.chart .tue {
+  background-color: #BBD8EC;
+  border-radius: 2px;
+  height: 50px;
+  width: 0.5em;
+}
+.chart .wed {
+  background-color: #BBD8EC;
+  border-radius: 2px;
+  height: 40px;
+  width: 0.5em;
+}
+.chart .thu {
+  background-color: #BBD8EC;
+  border-radius: 2px;
+  height: 30px;
+  width: 0.5em;
+}
+.chart .fri {
+  background-color: #BBD8EC;
+  border-radius: 2px;
+  height: 20px;
+  width: 0.5em;
+}
+.chart .sat {
+  background-color: #BBD8EC;
+  border-radius: 2px;
+  height: 40px;
+  width: 0.5em;
+}
+.chart .sun {
+  background-color: #0f5d91;
+  border-radius: 2px;
+  height: 56px;
+  width: 0.5em;
+}
+
+.day {
+  font-size: 0.7em;
+  margin-top: 5px;
+}
+
+.long-group {
+  width: 400px;
+  height: 175px;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.long {
+  width: 400px;
+  height: 75px;
+  background-color: #2b2b2b;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+.long img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.long .text {
+  display: flex;
+  flex-direction: column;
+}
+.long .text .name {
+  font-size: 0.8em;
+  margin-bottom: 5px;
+}/*# sourceMappingURL=style.css.map */
