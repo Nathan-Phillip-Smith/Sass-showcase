@@ -1,48 +1,6 @@
-@mixin small-widget-group {
-    width: 175px;
-    height: 175px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-@mixin small {
-    width: 75px;
-    height: 75px;
+@mixin widget {
     background-color: $color-main;
     border-radius: 15px;
-}
+};
 
-@mixin medium {
-    width: 175px;
-    height: 175px;
-    background-color: $color-main;
-    border-radius: 15px;
-}
-
-@mixin large {
-    width: 400px;
-    height: 175px;
-    background-color: $color-main;
-    border-radius: 15px;
-}
-
-@mixin long-group {
-    width: 400px;
-    height: 175px;
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-@mixin long {
-    width: 400px;
-    height: 75px;
-    background-color: $color-main;
-    border-radius: 15px;
-}
 

@@ -61,10 +61,10 @@ body {
 }
 
 .large {
-  width: 400px;
-  height: 175px;
   background-color: #2b2b2b;
   border-radius: 15px;
+  width: 400px;
+  height: 175px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -127,10 +127,10 @@ body {
 }
 
 .small {
-  width: 75px;
-  height: 75px;
   background-color: #2b2b2b;
   border-radius: 15px;
+  width: 75px;
+  height: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,10 +153,10 @@ body {
 }
 
 .medium {
-  width: 175px;
-  height: 175px;
   background-color: #2b2b2b;
   border-radius: 15px;
+  width: 175px;
+  height: 175px;
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -247,10 +247,10 @@ body {
 }
 
 .long {
-  width: 400px;
-  height: 75px;
   background-color: #2b2b2b;
   border-radius: 15px;
+  width: 400px;
+  height: 75px;
   padding: 20px;
   display: flex;
   flex-direction: row;
